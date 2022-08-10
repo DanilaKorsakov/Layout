@@ -1,0 +1,32 @@
+<header class="header">
+    <div class="header__top">
+        <div class="header__burger-menu">
+        </div>
+        <img src="@assets/svg/Logotype.svg" alt="" class="header__logo">
+        <button class="header__search"></button>
+    </div>
+    <div class="header__bottom">
+        @@include('custom-select.html',{
+            "default":"Demos"
+        })
+
+        @@include('custom-select.html',{
+        "default":"Post"
+        })
+
+        @@include('custom-select.html',{
+        "default":"Features"
+        })
+
+        @@include('custom-select.html',{
+        "default":"Categories"
+        })
+
+        @@include('custom-select.html',{
+        "default":"Shop"
+        })
+
+        <a href="#" class="header__link">Buy Now</a>
+
+    </div>
+</header>
