@@ -1,6 +1,39 @@
 <header class="header">
+    <div class="header__mobile">
+        <div class="header__mobile-top">
+            <img src="@assets/svg/Logotype.svg" alt="" class="header__logo">
+            <div class="header__close-btn">
+                <span class="header__mobile-cross"></span>
+            </div>
+        </div>
+        <div class="header__bottom_mobile">
+            @@include('custom-select.html',{
+            "default":"Demos"
+            })
+
+            @@include('custom-select.html',{
+            "default":"Post"
+            })
+
+            @@include('custom-select.html',{
+            "default":"Features"
+            })
+
+            @@include('custom-select.html',{
+            "default":"Categories"
+            })
+
+            @@include('custom-select.html',{
+            "default":"Shop"
+            })
+
+            <a href="#" class="header__link">Buy Now</a>
+
+        </div>
+    </div>
     <div class="header__top">
-        <div class="header__burger-menu">
+        <div class="header__burger">
+            <span class="header__burger-menu"></span>
         </div>
         <img src="@assets/svg/Logotype.svg" alt="" class="header__logo">
         <button class="header__search"></button>
