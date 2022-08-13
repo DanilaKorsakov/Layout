@@ -16,6 +16,7 @@ cross.addEventListener('click',crossClick);
 function burgerClick(){
     burger_menu.classList.add('active');
     logo.classList.add('active');
+    document.body.classList.add('active');
 
     window.onclick = (event)=>{
         if(event.target.closest('.header__mobile')===null && event.target.closest('.header__burger')==null){
@@ -30,6 +31,7 @@ function burgerClick(){
 function crossClick() {
     burger_menu.classList.remove('active');
     logo.classList.remove('active');
+    document.body.classList.remove('active');
 }
 
 if(screenWidth>1024) {

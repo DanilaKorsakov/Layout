@@ -1,24 +1,26 @@
 @media only screen and (min-width: 320px) {
 .main{
   font-family: 'Roboto', normal;
-  margin: rem(259) 0 0 rem(380);
   display: flex;
   gap: 40px;
   flex-wrap: wrap;
+  margin-top: rem(30);
+  justify-content: center;
 
   &__card{
-    width: rem(360);
+    width: 100%;
+    padding: 0 rem(16);
     display: flex;
     flex-direction: column;
     gap: rem(16);
 
     &-img{
-      width: inherit;
+      width: 100%;
       height: rem(230);
     }
 
     &-picture{
-      width:100%;
+      width: 100%;
       height:100%;
       object-fit: cover;
     }
@@ -76,4 +78,25 @@
 
   }
 }
+}
+
+@media only screen and (min-width: 600px) {
+ .main{
+   justify-content: unset;
+   margin-left: rem(30);
+   &__card{
+     width: 45%;
+     padding: 0;
+   }
+ }
+}
+
+@media only screen and (min-width: 1024px) {
+  .main{
+    margin: rem(259) 0 0 rem(380);
+
+    &__card{
+      width: rem(360);
+    }
+  }
 }
